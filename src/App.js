@@ -4,8 +4,16 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Environment, Scroll, ScrollControls, Sparkles, Float } from '@react-three/drei';
 import project1 from './assets/images/pronounce.PNG'
 import project2 from './assets/images/colombotodo.PNG'
+import { useState } from 'react';
 
 function App() {
+
+  const [click, setClick] = useState(false)
+
+  const handleClick = ()=>{
+    setClick(!click)
+  }
+
   return (
     <>
       <color attach="background" args={["#000000"]} />
@@ -56,30 +64,43 @@ function App() {
 
             <Row className="App__row App__row-projects" >
               <Col>
-                <div>
+                <div className="App__column">
                   <h2 style={{ marginBottom: '0px' }}>Projects</h2>
                 </div>
                 <Container>
-                  <Row>
+                  <Row className="App__container" onClick={handleClick}>
                     <Col md={4}>
-                      {/* <Float
-                        speed={1} // Animation speed, defaults to 1
-                        rotationIntensity={1} // XYZ rotation intensity, defaults to 1
-                        floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-                        floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
-                      
-                      > */}
-                        <Card mb={3} className="App__card">
-                          <img className="App__image" src={project1} alt="PronounceAppp" />
-                          <h3>Pronounce</h3>
-                          <p>sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
-                          <div>
-                            <Button>Github</Button>
-                            <Button>Demo</Button>
-                          </div>
-                        </Card>
-                      {/* </Float> */}
-
+                      <Card mb={3} className={click ? "transition card1" : "App__card card1"}>
+                        <img className="App__image" src={project1} alt="PronounceAppp" />
+                        <h3 className="App__card-text">Pronounce</h3>
+                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
+                        <div>
+                          <Button>Github</Button>
+                          <Button>Demo</Button>
+                        </div>
+                      </Card>
+                    </Col>
+                    <Col md={4}>
+                      <Card mb={3} className={click ? "transition card2" : "App__card card2"}>
+                        <img className="App__image" src={project2} alt="PronounceAppp" />
+                        <h3 className="App__card-text">TEST 1</h3>
+                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
+                        <div>
+                          <Button>Github</Button>
+                          <Button>Demo</Button>
+                        </div>
+                      </Card>
+                    </Col>
+                    <Col md={4}>
+                      <Card mb={3} className={click ? "transition card3" : "App__card card3"}>
+                        <img className="App__image" src={project1} alt="PronounceAppp" />
+                        <h3 className="App__card-text">TEST 2</h3>
+                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
+                        <div>
+                          <Button>Github</Button>
+                          <Button>Demo</Button>
+                        </div>
+                      </Card>
                     </Col>
                   </Row>
                 </Container>
@@ -91,28 +112,7 @@ function App() {
 
 
 
-            {/* 
-        <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src={project1} alt="Pronounce"/>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+          
 
           </Container>
 
@@ -125,3 +125,4 @@ function App() {
 }
 
 export default App;
+
