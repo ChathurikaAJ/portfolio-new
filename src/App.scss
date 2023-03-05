@@ -1,3 +1,10 @@
+
+@mixin tablet {
+  @media(min-width: 768px){
+      @content;
+  }
+}
+
 html,
 body,
 #root
@@ -9,6 +16,7 @@ body,
     height: 100%;
     overflow: hidden;
 }
+
 
 .App__header {
   background-color: transparent;
@@ -68,3 +76,27 @@ p {
   font-size: 18px;
   line-height: 1.8em;
 }
+
+.App {
+  &__scroll {
+    width: 100%;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__row{
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 30px;
+
+    @include tablet{
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
