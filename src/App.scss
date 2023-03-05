@@ -92,11 +92,15 @@ p {
     width: 100%;
     height: 100vh;
     padding: 0px 30px;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
-    @include tablet{
-      justify-content: center;
-      text-align: center;
-    }
+.col-6{
+  width: auto !important;
+  @include tablet{
+    width: 50% !important;
   }
 }
 
