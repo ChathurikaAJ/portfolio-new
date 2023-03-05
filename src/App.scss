@@ -5,6 +5,12 @@
   }
 }
 
+@mixin desktop {
+  @media(min-width: 1290px){
+      @content;
+  }
+}
+
 html,
 body,
 #root
@@ -94,6 +100,39 @@ p {
     padding: 0px 30px;
     justify-content: center;
     text-align: center;
+
+    &-skills{
+      top:70vh;
+
+      @include desktop{
+        top: 60vh;
+      }
+    }
+
+    &-projects{
+      top: 160vh;
+
+      @include desktop{
+        top: 140vh;
+      }
+    
+    }
+  }
+
+  &__card{
+    background-color: black !important;
+    
+  }
+
+  &__image{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border-radius: 0.375rem;
+
+    &:hover{
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
   }
 }
 
