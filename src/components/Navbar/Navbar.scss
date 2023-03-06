@@ -1,0 +1,45 @@
+@use "../../styles/global" as *;
+
+.Nav{
+    display: none;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-height: 720px;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        &__arrow{
+            position: fixed;
+            top: 0;
+            left: 8px;
+            color: rgba(35, 224, 249, 0.826);
+        }
+
+        &__list{
+        
+            &-hide{
+                display: none;
+            }
+        }
+
+        &__title{
+            width: fit-content;
+            writing-mode:vertical-lr;
+            transform: rotate(180deg);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            padding: 15px 5px;
+            cursor: pointer;
+            text-shadow: 0 0 7px #fff;
+        }
+    }
+}

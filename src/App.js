@@ -5,9 +5,7 @@ import { Environment, Scroll, ScrollControls, Sparkles, Float } from '@react-thr
 import project1 from './assets/images/pronounce.PNG'
 import project2 from './assets/images/colombotodo.PNG'
 import { useState } from 'react';
-import {Lotus} from './models/Lotus'
 import {Bird} from './models/Bird'
-
 
 function App() {
 
@@ -45,6 +43,7 @@ function App() {
         </Scroll>
 
         <Scroll html style={{ width: "100%" }}>
+
           <Container className="App__container">
 
             <Row className="App__row">

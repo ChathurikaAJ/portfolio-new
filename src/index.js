@@ -5,14 +5,17 @@ import App from './App';
 import logo from './assets/logo/logo.png'
 import { Canvas } from '@react-three/fiber';
 import 'bootstrap/scss/bootstrap.scss';
+import Navbar from './components/Navbar/Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <header className="App__header">
-      <img src={logo} alt="logo" className="App__logo"/>
+      {/* <img src={logo} alt="logo" className="App__logo"/> */}
+      <Navbar />
     </header>
+    
 
     <Canvas shadows>
       <App />
