@@ -70,7 +70,7 @@ p {
       top: 0px;
       left: 0px;
       right: 0px;
-      height: 300px;
+      height: 35vh;
       background: linear-gradient(
         rgba(0,0,0,1),
         rgba(0,0,0,0)
@@ -117,7 +117,7 @@ p {
     }
 
     &-projects{
-      top: 160vh;
+      top: 130vh;
 
       @include desktop{
         top: 140vh;
@@ -134,7 +134,7 @@ p {
     left: 50%;
     height: 300px;
     width: 300px;
-    transition: all 0.4s cubic-bezier(.63,.15,.03,1.12);
+    transition: all 0.7s cubic-bezier(.63,.15,.03,1.12);
     border-width: 0 !important;
 
     &:hover{
@@ -195,7 +195,7 @@ p {
     margin-bottom: 0;
     height: 300px;
     width: 300px;
-    transition: all 0.4s cubic-bezier(.63,.15,.03,1.12);
+    transition: all 0.9s cubic-bezier(.63,.15,.03,1.12);
 
     &.card1{
       left:0px;
