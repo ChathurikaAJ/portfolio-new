@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lotus3
+* source:	https://sketchfab.com/3d-models/lotus3-b93b3c95eadc4ad1afab3013d2331904
+* author:	DR PRESIDENT (https://sketchfab.com/drpresident)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lotus3" (https://sketchfab.com/3d-models/lotus3-b93b3c95eadc4ad1afab3013d2331904) by DR PRESIDENT (https://sketchfab.com/drpresident) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
