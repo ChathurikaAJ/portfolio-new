@@ -15,7 +15,7 @@ export function Bird(props) {
   const { nodes, materials, animations } = useGLTF('./models/bird/scene-transformed.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
-    actions['Armature.001|Scene|Scene'].timeScale = 0.15
+    actions['Armature.001|Scene|Scene'].timeScale = 0.2
     actions['Armature.001|Scene|Scene'].play()
   })
   
