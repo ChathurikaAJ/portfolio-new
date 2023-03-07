@@ -6,7 +6,9 @@ import project1 from './assets/images/pronounce.PNG'
 import project2 from './assets/images/colombotodo.PNG'
 import project3 from './assets/images/portfolio.PNG'
 import { useState } from 'react';
-import {Bird} from './models/Bird'
+import {Bird} from './models/Bird';
+import { BsGithub, BsLinkedin} from 'react-icons/bs';
+import {SiGmail} from 'react-icons/si';
 
 function App() {
 
@@ -22,7 +24,7 @@ function App() {
 
       <Environment preset="warehouse" />
 
-      <ScrollControls pages={3} damping={0.25}>
+      <ScrollControls pages={4} damping={0.25}>
 
         <Scroll>
 
@@ -122,9 +124,21 @@ function App() {
                   </Row>
                 </Container>
               </Col>
+            </Row>
 
+            <Row className="App__row App__row-contact" >
+              <Col xs={6}>
+                <div>
+                  <h2 style={{ marginBottom: '0px' }}>Contact</h2>
+                </div>
 
-
+                <div className='App__icons'>
+                  <BsGithub color='white' size='60px' cursor= 'pointer' />
+                  <BsLinkedin  color='white' size='60px' cursor= 'pointer' />
+                  <SiGmail color='white' size='60px' cursor= 'pointer'/>
+                
+                </div>
+              </Col>
             </Row>
 
 
