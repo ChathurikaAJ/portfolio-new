@@ -4,6 +4,7 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Environment, Scroll, ScrollControls, Sparkles, Float } from '@react-three/drei';
 import project1 from './assets/images/pronounce.PNG'
 import project2 from './assets/images/colombotodo.PNG'
+import project3 from './assets/images/portfolio.PNG'
 import { useState } from 'react';
 import {Bird} from './models/Bird'
 
@@ -89,32 +90,32 @@ function App() {
                       <Card mb={3} className={click ? "transition card1" : "App__card card1"}>
                         <img className="App__image" src={project1} alt="PronounceAppp" />
                         <h3 className="App__card-text">Pronounce</h3>
-                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
-                        <div>
-                          <Button>Github</Button>
-                          <Button>Demo</Button>
+                        <p className="App__card-text">Pronunciation assessment app</p>
+                        <div className="App__buttons">
+                          <Button className="App__button">Github</Button>
+                          <Button className="App__button">Demo</Button>
                         </div>
                       </Card>
                     </Col>
                     <Col md={4}>
                       <Card mb={3} className={click ? "transition card2" : "App__card card2"}>
                         <img className="App__image" src={project2} alt="PronounceAppp" />
-                        <h3 className="App__card-text">TEST 1</h3>
-                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
-                        <div>
-                          <Button>Github</Button>
-                          <Button>Demo</Button>
+                        <h3 className="App__card-text">ColomboToDo</h3>
+                        <p className="App__card-text">Blog post about restaurants and events in Colombo, Sri Lanka</p>
+                        <div className="App__buttons">
+                          <Button className="App__button">Github</Button>
+                          <Button className="App__button">Site</Button>
                         </div>
                       </Card>
                     </Col>
                     <Col md={4}>
                       <Card mb={3} className={click ? "transition card3" : "App__card card3"}>
-                        <img className="App__image" src={project1} alt="PronounceAppp" />
-                        <h3 className="App__card-text">TEST 2</h3>
-                        <p className="App__card-text">sdlshdhskjfhskjhfkjshkjfhskjhfsf</p>
-                        <div>
-                          <Button>Github</Button>
-                          <Button>Demo</Button>
+                        <img className="App__image" src={project3} alt="PronounceAppp" />
+                        <h3 className="App__card-text">Portfolio</h3>
+                        <p className="App__card-text">My portfolio site</p>
+                        <div className="App__buttons">
+                          <Button className="App__button">Github</Button>
+                          <Button className="App__button">Site</Button>
                         </div>
                       </Card>
                     </Col>

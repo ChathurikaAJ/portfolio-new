@@ -126,6 +126,8 @@ p {
     transition: all 0.7s cubic-bezier(.63,.15,.03,1.12);
     // border-width: 0 !important;
     // border: 6px white solid !important;
+    display: flex !important;
+
 
     &:hover{
       cursor: pointer;
@@ -135,12 +137,27 @@ p {
       color: black;
       margin-bottom: 0 !important;
       padding-top: 1rem;
+      
     }
   }
 
   &__image{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+  }
+
+  &__buttons{
+    align-self: flex-end;
+  }
+
+  &__button{
+    background-color: transparent !important;
+    color: black !important;
+    border-color: transparent !important;
+    cursor: pointer;
+    font-weight: bold !important;
+    
+    
   }
 }
 
@@ -151,6 +168,8 @@ p {
     width: 50% !important;
   }
 }
+
+
 
 // Project card animation
 .card1{ 
@@ -177,14 +196,14 @@ p {
   transform: rotateZ(0deg);
   margin-bottom: 1rem;
   border-radius: 0 !important;
+  display: grid !important;
   
 
   @include tablet{
-    
     background-color: rgb(255, 255, 255) !important;
     position: absolute !important;
     margin-bottom: 0;
-    height: 300px;
+    height: 300px !important;
     width: 300px;
     transition: all 0.9s cubic-bezier(.63,.15,.03,1.12);
  
@@ -205,5 +224,7 @@ p {
     }
     
   }
+
+  
 
 }
