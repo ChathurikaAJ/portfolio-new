@@ -41,6 +41,11 @@
   &__container {
     position: relative;
     justify-content: center;
+    flex-direction: column;
+
+    @include desktop{
+      flex-direction: row;
+    }
    
   }
 
@@ -61,30 +66,31 @@
     &-skills{
       top:100vh;
 
-      @include desktop{
-        top: 90vh;
-      }
+
+      // @include desktop{
+      //   top: 90vh;
+      // }
     }
 
     &-projects{
       top: 200vh;
   
       
-      @include desktop{
-        top: 170vh;
-      }
+      // @include desktop{
+      //   top: 170vh;
+      // }
     
     }
 
     &-contact{
       top: 380vh;
 
-      @include tablet {
-        top: 300vh;
-      }
+      // @include tablet {
+      //   top: 300vh;
+      // }
 
       @include desktop{
-        top: 250vh;
+        top: 300vh;
       }
     } 
   }
@@ -173,8 +179,19 @@
 
 
 .App__container-cards {
-  width: auto !important;
+
   padding: 0 !important;
-  max-width: none !important;
+  display: flex;
+  justify-content: center !important;
+  width: auto !important;
+
+  @include tablet{
+    padding: 0 10px !important;
+    max-width: 100% !important;
+  }
+
+  @include desktop{
+    display: block !important;
+  }
 }
 

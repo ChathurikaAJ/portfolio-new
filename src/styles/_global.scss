@@ -6,10 +6,12 @@
   }
   
 @mixin desktop {
-    @media(min-width: 1290px){
+    @media(min-width: 1279px){
         @content;
     }
 }
+
+
 
 html,
 body,
