@@ -80,7 +80,7 @@
       top: 400vh;
 
       @include tablet {
-        top: 320vh;
+        top: 300vh;
       }
 
       @include desktop{
@@ -138,6 +138,7 @@
     border-color: transparent !important;
     cursor: pointer;
     font-weight: bold !important;
+  
   }
 
   &__icons{
