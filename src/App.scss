@@ -77,7 +77,7 @@
     }
 
     &-contact{
-      top: 400vh;
+      top: 380vh;
 
       @include tablet {
         top: 300vh;
@@ -174,10 +174,7 @@
 
 .App__container-cards {
   width: auto !important;
+  padding: 0 !important;
+  max-width: none !important;
 }
 
-.butterfly{
-  position: absolute;
-  bottom: 10%;
-  display: none !important;
-}
