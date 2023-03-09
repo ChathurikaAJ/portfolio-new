@@ -5,8 +5,42 @@
     }
   }
   
-  @mixin desktop {
+@mixin desktop {
     @media(min-width: 1290px){
         @content;
     }
-  }
+}
+
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Italiana', serif;
+  color: #fff;
+  margin-bottom: 32px !important;
+}
+
+h1 {
+  font-size: 60px !important;
+}
+
+h2 {
+  font-size: 40px !important;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8em;
+}
