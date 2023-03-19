@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-### [Live Site](https://chathurika.netlify.app/)
+### [Live Site](https://mysite178.netlify.app/)
 
 <img width="1266" alt="ScreenShot" src="./src/assets/images/portfolio.PNG">
 
